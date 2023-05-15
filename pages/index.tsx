@@ -2,13 +2,11 @@ import {
   Container,
   Row,
   Col,
-  Card,  
+  Card,
+  Image,  
 } from "react-bootstrap"
 import MyNavbar from "@/components/my-navbar"
-import Image from 'next/image'
-const imageLoader = ({ src, width, quality }) => {
-  return `https://images.unsplash.com/${src}?w=${width}&q=${quality || 75}`;
-};
+
 export default function Home() {
   return (
     <Container>
@@ -26,9 +24,7 @@ export default function Home() {
               <Card className={`fj-card fj-card-list`}>
                 <div className="card-body-wrapper">
                   <Card.Header className="d-flex flex-row">
-                    <Image 
-                    loader={imageLoader}
-                    src="photo-1416339306562-f3d12fefd36f"
+                    <Image                     src="https://images.unsplash.com/profile-1446404465118-3a53b909cc82"
                     className="rounded-circle mr-3"
                     height={50}
                     width={50}
@@ -57,9 +53,7 @@ export default function Home() {
               <Card className={`fj-card`}>
                 <div className="card-body-wrapper">
                   <Card.Header className="d-flex flex-row">
-                    <Image 
-                    loader={imageLoader}
-                    src="photo-1416339306562-f3d12fefd36f"
+                    <Image                     src="https://images.unsplash.com/photo-1416339306562-f3d12fefd36f"
                     className="rounded-circle mr-3"
                     height={50}
                     width={50}
@@ -95,8 +89,7 @@ export default function Home() {
                 <div className="card-body-wrapper">
                   <Card.Header className="d-flex flex-row">
                     <Image
-                    loader={imageLoader}
-                    src="photo-1581961462133-ca8618e89ed3"
+                    src="https://images.unsplash.com/photo-1581961462133-ca8618e89ed3"
                     className="rounded-circle mr-3"
                     height={50}
                     width={50}
@@ -132,8 +125,7 @@ export default function Home() {
                 <div className="card-body-wrapper">
                   <Card.Header className="d-flex flex-row">
                     <Image 
-                    loader={imageLoader}
-                    src="photo-1461988320302-91bde64fc8e4"
+                    src="https://images.unsplash.com/photo-1461988320302-91bde64fc8e4"
                     className="rounded-circle mr-3"
                     height={50}
                     width={50}
